@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
 
 // Add a new document to the collection
 router.post("/", async (req, res) => {
-  let collection = await db
+  let collection = db
   let newDocument = req.body;
   let result = await collection.insertOne(newDocument);
   res.send(result).status(204);

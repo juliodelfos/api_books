@@ -15,7 +15,7 @@ app.use("/books", books);
 
 // Global error handling
 app.use((err, _req, res, next) => {
-  res.status(500).send("Uh oh! An unexpected error occured.")
+  res.status(500).send("Error inesperado")
 })
 
 // start the Express server
